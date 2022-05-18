@@ -1,3 +1,9 @@
+Simple Script created to execute for locking down a server or service. 
+
+```
+git clone https://github.com/dem-linux/iptables.git
+```
+
 
 Make the Script executable 
 
