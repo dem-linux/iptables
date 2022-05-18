@@ -17,9 +17,9 @@ iptables -A OUTPUT -o lo -j ACCEPT
 iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 iptables -A OUTPUT -p tcp --sport 22 -j ACCEPT
 
-## Allow Ping in/out (check if the device is alive)
-iptables -A INPUT -p icmp -j ACCEPT
-iptables -A OUTPUT -p icmp -j ACCEPT
+## Allow Ping in/out (check if the device is alive) (Remove comment if you want to allow ping!)
+#iptables -A INPUT -p icmp -j ACCEPT
+#iptables -A OUTPUT -p icmp -j ACCEPT
 
 # drop everything else
 iptables -A INPUT -j DROP
